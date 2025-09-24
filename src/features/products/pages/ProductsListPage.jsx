@@ -1,10 +1,8 @@
 // src/pages/ProductsListPage.jsx
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { paginate, PRODUCTS, unique } from "../utils/utils";
-import SearchBar from "../components/SearchBar";
-import Pagination from "../components/Pagination";
 import { useMemo } from "react";
-import Product from "../components/Product";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { paginate, PRODUCTS, unique } from "../../../utils/utils";
+
 
 const ProductsListPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();

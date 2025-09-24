@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import ProductsListPage from "./pages/ProductsListPage";
-import ProductsDetailsPage from "./pages/ProductDetailsPage";
+import ProductsListPage from './features/products/pages/ProductsListPage';
+import ProductsDetailsPage from "./features/products/pages/ProductsListPage";
+import Home from "./features/products/pages/Home";
 
-
-import Home from "./pages/Home";
 export default function App() {
   return (
     <Router>

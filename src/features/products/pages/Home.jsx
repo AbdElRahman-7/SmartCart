@@ -1,6 +1,6 @@
 // src/pages/Home.jsx
-import ProductsListPage from "./ProductsListPage";
 
+import ProductsListPage from "./ProductsListPage";
 const Home = () => {
   return (
     <div className="p-6 text-center">
