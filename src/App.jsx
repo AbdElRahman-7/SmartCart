@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import ProductsListPage from "./components/ProductsListPage";
-import ProductDetailsPage from "./components/ProductDetailsPage";
+import ProductsListPage from './features/products/pages/ProductsListPage';
+import ProductsDetailsPage from "./features/products/pages/ProductsListPage";
+import Home from "./features/products/pages/Home";
 
 export default function App() {
   return (
@@ -16,10 +17,10 @@ export default function App() {
 
         <main className="py-8">
           <Routes>
-            <Route path="/" element={<ProductsListPage />} />
-            <Route path="/product/:id" element={<ProductDetailsPage />} />
-            <Route path="*" element={<div className="p-6">Page not found. <Link to="/">Go home</Link></div>} />
-          </Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<ProductsListPage />} />
+          <Route path="/product/:id" element={<ProductsDetailsPage />} />
+        </Routes>
         </main>
       </div>
     </Router>
